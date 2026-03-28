@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "supply-chain-env"
+version = "1.0.0"
+description = "Supply Chain & Inventory Management OpenEnv — AI agent training environment for warehouse optimization with supplier negotiation"
+readme = "README.md"
+license = {text = "BSD-3-Clause"}
+requires-python = ">=3.10"
+authors = [
+    {name = "SNC Inventra", email = "dev@sncinventra.com"},
+]
+
+dependencies = [
+    "openenv-core>=0.2.0",
+    "fastapi>=0.104.0",
+    "uvicorn>=0.24.0",
+    "numpy>=1.24.0",
+    "requests>=2.25.0",
+    "websockets>=12.0",
+    "cachetools>=5.3.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "httpx>=0.25.0",
+]
+baseline = [
+    "openai>=1.0.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["supply_chain_env*"]
