@@ -1,13 +1,3 @@
----
-title: Supply Chain OpenEnv
-emoji: 🏭
-colorFrom: blue
-colorTo: indigo
-sdk: docker
-pinned: false
-app_port: 8000
----
-
 # 🏭 Supply Chain & Inventory Management OpenEnv
 
 An end-to-end [OpenEnv](https://github.com/meta-pytorch/OpenEnv)-compliant environment that simulates **real-world warehouse management** with supplier negotiation — designed for training and evaluating AI agents on supply chain optimization.
